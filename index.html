@@ -9,29 +9,33 @@
 <body>
   <h1>Vintage Insights: Exploring Global Wine Production</h1>
 
-  <label for="countryFilter">Filter by Country:</label>
-  <select id="countryFilter">
-    <option value="All">All</option>
-  </select>
-  <label for="vintageFilter">Filter by Year:</label>
-  <select id="vintageFilter">
-    <option value="All">All</option>
-  </select>
-  <div id="charts">
-    <div id="scatter-container">
-      <h2>Price vs. Alcohol by volume</h2>
-      <!-- Increase scatter plot SVG size to declutter the visualization-->
-      <svg id="scatter" width="900" height="700"></svg>
+  <div class="filters">
+    <label for="countryFilter">Filter by Country:</label>
+    <select id="countryFilter">
+      <option value="All">All</option>
+    </select>
+    <label for="vintageFilter">Filter by Year:</label>
+    <select id="vintageFilter">
+      <option value="All">All</option>
+    </select>
+  </div>
+
+  <div class="graphs">
+    <div class="graph-container" id="scatter-container">
+      <h2>Price vs. Alcohol by Volume</h2>
+      <!-- Increased scatter plot SVG dimension -->
+      <svg id="scatter" width="1200" height="800"></svg>
     </div>
-    <div id="bar-container">
+    <div class="graph-container" id="bar-container">
       <h2>Average Price by Wine Type</h2>
       <svg id="bar" width="600" height="400"></svg>
     </div>
+    <div class="graph-container" id="line-container">
+      <h2>Production Trends over Time</h2>
+      <svg id="line" width="600" height="400"></svg>
+    </div>
   </div>
-  <div id="line-container">
-    <h2>Production Trends over time</h2>
-    <svg id="line" width="600" height="400"></svg>
-  </div>
+  
   <script src="script.js"></script>
 </body>
 </html>

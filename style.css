@@ -1,32 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background: #8a0000;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  #charts {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  svg {
-    background: #ffffff;
-    border: 1px solid #ffffff;
-  }
-  
-  .tooltip {
-    position: absolute;
-    background: rgb(255, 0, 0);
-    padding: 8px;
-    border: 1px solid #ff0000;
-    font-size: 12px;
-    pointer-events: none;
-    display: none;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background: #8a0000;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.graphs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.graph-container {
+  margin: 20px 0;
+}
+
+svg {
+  background: #000000;
+  border: 1px solid #000000;
+}
+
+.tooltip {
+  position: absolute;
+  background: rgb(255, 0, 0);
+  padding: 8px;
+  border: 1px solid #ff0000;
+  font-size: 12px;
+  pointer-events: none;
+  display: none;
+}
